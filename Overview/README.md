@@ -44,9 +44,7 @@ The prototype can be fully demonstrated using a breadboard-based setup.
 
 The Software Requirements Specification (SRS) can be found at:
 
-🔗 `docs/architecture/requirements/SRS.md`
-
-(Replace with the full GitHub link once uploaded.)
+docs/architecture/SRS
 
 ---
 
