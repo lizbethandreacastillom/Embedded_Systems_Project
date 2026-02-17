@@ -43,8 +43,8 @@ The prototype can be fully demonstrated using a breadboard-based setup.
 ## Requirements Documentation
 
 The Software Requirements Specification (SRS) can be found at:
+https://github.com/lizbethandreacastillom/Embedded_Systems_Project/tree/main/docs/architecture/SRS
 
-docs/architecture/SRS
 
 ---
 
