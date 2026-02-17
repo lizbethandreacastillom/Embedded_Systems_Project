@@ -1,64 +1,70 @@
-Secure Access Management System
 
-Embedded Systems Project
+---
+# Secure Access Management System
 
- Project Overview
+**Embedded Systems Project**
 
-This project consists of the design and implementation of a secure access control system using an ESP32 microcontroller as a Micro Web Server (MWS).
+---
 
-The system allows users to scan a QR code to access a locally hosted web interface. After entering a PIN, the ESP32 validates the credentials and activates a physical actuator (relay or servo motor) to simulate door unlocking.
+##  Project Overview
 
-The system integrates embedded programming, networking, and cybersecurity concepts in a single autonomous device.
+This project consists of the design and implementation of a secure access control system using an ESP32 DevKit V1 operating as a Micro Web Server (MWS).
 
- Objective
+The system allows users to scan a QR code to access a locally hosted web interface. After entering a PIN, the ESP32 validates the credentials internally and activates a physical actuator (relay or servo motor) to simulate door unlocking.
+
+The project integrates embedded systems programming, wireless networking, and cybersecurity principles into a single autonomous device.
+
+---
+
+## Objective
 
 To design and implement a secure embedded access control system that:
 
-Hosts its own web server
+* Hosts its own web server
+* Authenticates users via PIN
+* Controls a physical actuator
+* Implements brute-force protection
+* Operates independently without cloud services
 
-Authenticates users via PIN
+---
 
-Controls a physical actuator
-
-Implements brute-force protection
-
-Operates independently without cloud services
-
- System Architecture
+##  System Architecture
 
 The system is divided into three main layers:
 
-Hardware Layer – ESP32, relay, servo motor, LEDs
+1. **Hardware Layer** – ESP32, relay module, servo motor, status LEDs
+2. **Network Layer** – Wi-Fi Access Point (AP mode) with WPA2 encryption
+3. **Application Layer** – Asynchronous web server handling authentication requests
 
-Network Layer – Wi-Fi AP mode with WPA2 security
 
-Application Layer – Asynchronous web server handling authentication requests
+---
 
- Detailed requirements and architecture documentation can be found here:
- docs/architecture/requirements/SRS.md
+##  Hardware Used
 
-Hardware Used
+* **ESP32 DevKit V1** – Main microcontroller with integrated Wi-Fi connectivity
+* **5V Relay Module** – Controls simulated locking mechanism
+* **SG90 Micro Servo** – Simulates mechanical lock movement
+* **Red and Green LEDs** – Visual access status indicators
+* **220Ω Resistors** – LED current protection
+* **Breadboard & Jumpers** – Rapid prototyping setup
+* **Micro-USB Cable** – Power supply and firmware upload
 
-ESP32 DevKit V1 – Main microcontroller with integrated Wi-Fi
+---
 
-5V Relay Module – Controls simulated locking mechanism
+##  Security Features
 
-SG90 Micro Servo – Simulates mechanical lock movement
+* WPA2 network isolation
+* Server-side PIN validation
+* Temporary lock after three failed attempts
+* Disabled browser autocomplete for credential protection
 
-Red and Green LEDs – Status indication
+---
 
-220Ω Resistors – LED protection
+##  Team Members
 
-Breadboard & Jumpers – Prototyping
+| Name                              | Role          |
+| --------------------------------- | ------------- |
+| Daniela Jhoan Rosas Landeros      | Hardware Lead |
+| Lizbeth Andrea Castillo Maldonado | Software Lead |
 
-Micro-USB Cable – Power and firmware upload
-
- Security Features
-
-WPA2 network isolation
-
-Server-side PIN validation
-
-Temporary lock after 3 failed attempts
-
-No credential storage in browser
+---
