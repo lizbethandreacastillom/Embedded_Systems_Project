@@ -35,7 +35,7 @@ Network Layer – Wi-Fi AP mode with WPA2 security
 Application Layer – Asynchronous web server handling authentication requests
 
  Detailed requirements and architecture documentation can be found here:
-➡ docs/architecture/requirements/SRS.md
+ docs/architecture/requirements/SRS.md
 
 Hardware Used
 
