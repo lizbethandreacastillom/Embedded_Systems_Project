@@ -68,3 +68,8 @@ The system is divided into three main layers:
 | Lizbeth Andrea Castillo Maldonado | Software Lead |
 
 ---
+
+## Actualización Final Sprint 3
+- PIN: 0307
+- LED Rojo: GPIO 5
+- Red: Cerradura Inteligente
