@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/dannylanderos/Library/Arduino15/packages/esp32/hardware/esp32/3.3.3/cores/esp32",
+                "/Users/dannylanderos/Library/Arduino15/packages/esp32/hardware/esp32/3.3.3/libraries/WiFi/src",
+                "/Users/dannylanderos/Documents/Arduino/libraries/Servo/src",
+                "/Users/dannylanderos/Library/Arduino15/packages/esp32/tools/esp32-arduino-libs/idf-release_v5.5-f1a1df9b-v3/esp32/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
